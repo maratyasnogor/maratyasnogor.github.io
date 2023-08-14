@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poker Ledger</title>
+    <link rel="stylesheet" href="css/poker.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Poker Ledger</h1>
+        
+        <div class="add-player">
+            <input type="text" id="playerName" placeholder="Player Name" maxlength="18">
+            <input type="number" id="startingStack" placeholder="Starting Stack" min="0">
+            <button onclick="addPlayer()">Add Player</button>
+        </div>
+        
+        <div class="players-list">
+            <!-- Players will be dynamically added here -->
+        </div>
+        
+        <button onclick="calculateDebt()">Calculate</button>
+        
+        <div class="results">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+    <script src="js/poker.js"></script>
+</body>
+</html>
